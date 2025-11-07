@@ -4,7 +4,7 @@ using System.IO;
 public class MainManager : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public static MainManager Instance;
+    public static MainManager Instance { get; private set; }
 
     public Color TeamColor;
 
